@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ocean View Resort | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-card">
+
+        <h2>🌊 Ocean View Resort</h2>
+        <p class="subtitle">Reservation System Dashboard</p>
+
+        <a href="reservation.html" class="btn">📝 Add New Reservation</a>
+
+        <a href="bill.html" class="btn">💳 Calculate & Print Bill</a>
+
+        <a href="help.html" class="btn">❓ Help</a>
+
+        <a href="viewReservations" class="btn">📋 View Reservations</a>
+
+        <a href="index.html" class="btn danger">🚪 Exit</a>
+
+    </div>
+</div>
+    
+    <script>
+const params = new URLSearchParams(window.location.search);
+
+if(params.get("success")==="1"){
+    alert("✅ Reservation Saved Successfully!");
+}
+</script>
+
+</body>
+</html>

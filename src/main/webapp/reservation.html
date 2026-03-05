@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ocean View Resort | Add Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login-container">
+    <div class="login-card wide">
+
+        <h2>🌊 Ocean View Resort</h2>
+        <p class="subtitle">Add New Reservation</p>
+
+        <!-- FORM START -->
+        <form action="addReservation" method="post">
+
+            <div class="input-group">
+                <input type="text" name="reservationNumber" required>
+                <label>Reservation Number</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="guestName" required>
+                <label>Guest Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" name="address" required>
+                <label>Address</label>
+            </div>
+
+            <div class="input-group">
+                <input type="tel" name="contactNumber" required>
+                <label>Contact Number</label>
+            </div>
+
+            <div class="input-group">
+                <select name="roomType" required>
+                    <option value="" disabled selected hidden></option>
+                    <option>Single Room</option>
+                    <option>Double Room</option>
+                    <option>Family Suite</option>
+                </select>
+                <label class="fixed-label">Room Type</label>
+            </div>
+
+            <div class="date-group">
+                <label>Check-in Date</label>
+                <input type="date" name="checkInDate" required>
+            </div>
+
+            <div class="date-group">
+                <label>Check-out Date</label>
+                <input type="date" name="checkOutDate" required>
+            </div>
+
+            <button type="submit">💾 Save Reservation</button>
+
+        </form>
+        <!-- FORM END -->
+
+        <a href="dashboard.html">
+            <button class="secondary">⬅ Back</button>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
