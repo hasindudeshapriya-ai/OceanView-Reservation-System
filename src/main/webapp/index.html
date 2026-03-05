@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ocean View Resort | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-container">
+    <div class="login-card">
+        <h2>🌊 Ocean View Resort</h2>
+        <p class="subtitle">Reservation System Login</p>
+
+        <div class="input-group">
+            <input type="text" id="username" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-group">
+            <input type="password" id="password" required>
+            <label>Password</label>
+        </div>
+
+        <button onclick="login()">Login</button>
+        <p id="msg" class="error"></p>
+    </div>
+</div>
+
+<script>
+function login() {
+    let u = document.getElementById("username").value;
+    let p = document.getElementById("password").value;
+
+    if(u === "Hasindu"  && p === "183467") {
+        window.location.href = "dashboard.html";
+    } else {
+        document.getElementById("msg").innerText = "❌ Invalid username or password!";
+    }
+}
+</script>
+</body>
+</html>
